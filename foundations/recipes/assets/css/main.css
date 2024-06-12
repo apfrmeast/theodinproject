@@ -1,0 +1,122 @@
+:root {
+    --background-color: #FEFAE0;
+    --primary-theme-color: #283618;
+    --secondary-theme-color: #606C38;
+    --primary-accent-color: #DDA15E;
+    --secondary-accent-color: #BC6C25;
+}
+
+@font-face {
+    font-family: norse-heavy;
+    src: url('../fonts/norse-heavy.otf');
+}
+
+@font-face {
+    font-family: norse-light;
+    src: url('../fonts/norse-light.otf');
+}
+
+.overlock-sc-regular {
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.norse-font-heavy {
+    font-family: norse-heavy;
+}
+
+.norse-font-light {
+    font-family: norse-light;
+}
+
+* { margin: 0; padding: 0;}
+
+html {
+    background-color: var(--background-color);
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+    background-color: var(--primary-theme-color);
+}
+
+#logo {
+    display: block;
+    position: absolute;
+    width: 140px;
+}
+
+#header-text {
+    align-self: center;
+    font-size: xx-large;
+    scale: 3;
+    color: var(--primary-accent-color);
+}
+
+#sub-heading-main {
+    position: absolute;
+    padding-top: 110px;
+    text-align: center;
+    color: var(--primary-accent-color);
+}
+
+#recipes-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 65px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding: 50px;
+    gap: 30px;
+}
+
+#recipes-container-item {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+#recipes-container-ln1-row {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+#recipes-container-ln2-row {
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+.plain-link {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-container {
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    padding-top: 10px;
+    align-content: center;
+    background-color: var(--primary-theme-color);
+    width: 100%;
+    height: 60px;
+}
+
+#bg-image {
+    display: flex;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    z-index: -1;
+    opacity: 10%;
+}
